@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.moonside.rcc.Home">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="连接设备"
+            android:background="@drawable/btconnect"
+            android:id="@+id/BT_setBT" />
+
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="摇杆操控"
+            android:background="@drawable/pole"
+            android:id="@+id/BT_poleCtrl" />
+
+        <ImageButton
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="重力感应"
+            android:background="@drawable/gravity"
+            android:id="@+id/BT_gravCtrl" />
+
+        <ImageButton
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="200dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="语音识别"
+            android:background="@drawable/voice"
+            android:id="@+id/BT_voiceCtrl" />
+
+        <ImageButton
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="视频通讯"
+            android:background="@drawable/video"
+            android:id="@+id/BT_video" />
+
+
+            <ImageButton
+                android:layout_marginTop="280dp"
+                android:layout_marginLeft="200dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="响铃"
+                android:background="@drawable/bell"
+                android:id="@+id/BT_bell" />
+
+        </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_weight="1">-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceMedium"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="已连接设备："&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/TX_conInfo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceMedium"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="当前状态："&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/TX_stateInfo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceMedium"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="接收消息："&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/TX_read"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"/>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<Button&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:text="GO！"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:id="@+id/Bt_tmp1" />&ndash;&gt;&ndash;&gt;-->
+
+        <!--&lt;!&ndash;&lt;!&ndash;<Button&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:text="Stop！"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:id="@+id/Bt_tmp2" />&ndash;&gt;&ndash;&gt;-->
+
+        <!--&lt;!&ndash;&lt;!&ndash;<Button&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:text="read！"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;android:id="@+id/Bt_tmp3" />&ndash;&gt;&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+    <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

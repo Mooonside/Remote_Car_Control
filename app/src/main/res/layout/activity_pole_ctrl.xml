@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.moonside.rcc.poleCtrl">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="向左"
+            android:id="@+id/BT_LEFT"
+            android:layout_marginRight="220dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/notleft"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="停止"
+            android:layout_marginTop="120dp"
+            android:id="@+id/BT_STOP"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/notstop"
+            android:layout_weight="1"
+            android:checked="false" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="220dp"
+            android:text="向后"
+            android:id="@+id/BT_BACK"
+            android:layout_weight="1"
+            android:background="@drawable/notdown"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="220dp"
+            android:text="向右"
+            android:id="@+id/BT_RIGHT"
+            android:checked="false"
+            android:background="@drawable/notright" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="向前"
+            android:layout_marginTop="20dp"
+            android:id="@+id/BT_FORW"
+            android:layout_weight="1"
+            android:background="@drawable/notup"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="速度控制"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/BT_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SB_speed"
+        android:layout_above="@+id/textView"
+        android:max="200"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/BT_back"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/SB_speed" />
+
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp" />
+
+
+
+</RelativeLayout>

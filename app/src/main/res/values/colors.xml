@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <color name="white">#ffffff</color>
+    <color name="gray">#c1bdbd</color>
+    <color name="theme">#04477c</color>
+    <color name="background">#e7f2fd</color>
+	<color name="subtab">#04477c</color>
+	<color name="black">#333333</color>
+
+ 	<color name="grey">#363636</color>
+    <color name="dark_grey">#282828</color>
+    <color name="trans_dark_grey">#802828</color>
+    <color name="trans_white">#20ffffff</color>
+    <color name="trans">#00000000</color>
+    <color name="blue">#cc33b5e5</color>
+</resources>
